@@ -5,12 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Instagram</title>
+  <title>Instagram Graph API</title>
 </head>
 
 <body>
 
-  <div class="container"></div>
+  <div class="container">
+    <div class="account-info">
+      <div class="user-name"></div>
+      <ul>
+        <li class="media-count">
+          投稿数<span class="num"></span>件
+        </li>
+        <li class="follows-count">
+          フォロー数<span class="num"></span>人
+        </li>
+        <li class="followers-count">
+          フォロワー数<span class="num"></span>人
+        </li>
+      </ul>
+    </div>
+
+    <div class="media-container"></div>
+
+    <div class="hashtag-search">
+      <input type="text" placeholder="#hashtag or @account">
+      <button>検索</button>
+    </div>
+
+    <div class="search-container"></div>
+  </div>
+
+  <div class="loading">検索中</div>
+  <div class="message-box"></div>
 
   <script src="./app.js"></script>
 </body>
